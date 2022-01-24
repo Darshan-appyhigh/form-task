@@ -13,6 +13,7 @@ body {
   font-size: 1.8rem;
   line-height: 120%;
   color: #080808;
+  position: relative;
 }
 
 .container {
@@ -170,6 +171,13 @@ input:focus {
   margin: 0 auto;
   padding: 1rem 2rem;
   cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.submit-btn:focus {
+  outline: none;
+  border: none;
 }
 
 .checkbox-inputbox {
@@ -204,4 +212,40 @@ input:focus {
 
 /* @media (){
 
+} */
+
+.popupBox {
+  width: 100vw;
+  height: 100vh;
+  display: flex !important;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.popup {
+  box-sizing: content-box;
+  padding: 4rem;
+  width: 50vh;
+  height: 70vh;
+  overflow-y: scroll !important;
+  background-color: #fff;
+}
+
+.popup form {
+  position: relative;
+}
+
+.closeBtn {
+  position: absolute;
+  top: -2rem;
+  right: -1rem;
+  cursor: pointer;
+}
+
+/* .popup::-webkit-scrollbar {
+  display: none;
 } */
